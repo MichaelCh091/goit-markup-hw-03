@@ -242,23 +242,6 @@ img {
     padding-bottom: 120px;
 }
 
-.info-container {
-    padding: 32px 0;
-}
-    
-.info-title {
-    text-align: center;
-    margin-bottom: 8px;
-}
-    
-.info-position {
-    text-align: center;     
-}
-
-.team-list{
-    display: flex;
-    gap: 24px;
-}
 .section-title-team {
     font-weight: 700;
     font-size: 36px;
@@ -267,22 +250,51 @@ img {
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
-    margin: 0 auto;
-    margin-bottom: 72px;
+    margin: 0 auto 72px auto;
+}
+.info-title{
+    margin-bottom: 8px;
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team-item {
+    width: calc((100% - 72px) / 4);
+    height: 380px;
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px 0px;
-    width: 264px;
-    height: 380px;
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-        background: #fff;
+    box-shadow:
+        0 2px 1px rgba(46, 47, 66, 0.08),
+        0 1px 1px rgba(46, 47, 66, 0.16),
+        0 1px 6px rgba(46, 47, 66, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
-.team-image{
-    margin-bottom: 32px;
+.team-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.info-container {
+    padding: 32px 16px;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .team-name {
@@ -291,8 +303,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
-    text-align: center;
+    margin: 0 auto 8px auto;
+    max-width: 127px;
 }
 
 .team-role {
@@ -300,8 +312,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 32px;
-    text-align: center;
+    margin: 0 auto;
+    max-width: 85px;
 }
 
 .portfolio-section {
