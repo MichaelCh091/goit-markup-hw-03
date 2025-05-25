@@ -292,7 +292,7 @@ img {
 }
 
 .info-container {
-    padding: 32px 16px;
+    padding: 32px 0;
     text-align: center;
     flex-grow: 1;
 }
